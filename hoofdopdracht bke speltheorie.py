@@ -17,3 +17,7 @@ class MySmarterAgent(EvaluationAgent):
         elif can_win(board, opponent_symbol):
             getal = getal - 10
         return getal
+
+my_random_agent = MyRandomAgent()
+my_smarter_agent = MySmarterAgent()
+start(player_o=my_random_agent,player_x=my_smarter_agent)
